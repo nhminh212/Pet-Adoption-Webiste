@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Pet Life</title>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site">
+    <header class="main-header" id="main-header">
+      <div class="main-header-inner">
+        <div class="site-logo">
+          <div class="logo">
+            <a class="site-link" href="index.html">
+              <img src="./images/logo.png" height="50" alt="A PET LIFE">
+              <span class="text">A PET LIFE</span><br>
+            </a>
+          </div>
+        </div>
+        <div class="site-menu">
+          <nav class="main-menu" role="navigation">
+            <ul class="main-menu-list">
+              <li class="main-menu-items">
+                <a class="main-menu-link" href="index.html">Home</a>
+              </li>
+              <li class="main-menu-items">
+                <a class="main-menu-link" href="About-Us.html">About Us</a>
+              </li>
+              <li class="main-menu-items">
+                <a class="main-menu-link" href="Profiles.html">Profiles</a>
+              </li>
+              <li class="main-menu-items">
+                <a class="main-menu-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main" role="main" class="main">
+      <div class="main-top">
+        <div class="main-left">
+          <div class="input-container">
+            <h2>GET IN TOUCH</h2>
+            <p style="font-size: 26px">Leave us a message for more information</p>
+            <form id="contactForm" novalidate="true">
+              <div class="form-container">
+                <div class="form-group">
+                  <div class="form-box">
+                    <input type="text" class="form-control name-control" name="name" placeholder="Your Name" required>
+                    <span class="error-message hidden">* Name is required</span>
+                  </div>
+                  <div class="form-box">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    <span class="error-message hidden">* Email is required</span>
+                  </div>
+                  <div class="form-box">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required maxlength="40">
+                    <span class="error-message hidden">* Subject is required</span>
+                  </div>
+                  <div class="form-box">
+                    <textarea class="form-control" placeholder="Your Message" rows="4" required=""></textarea>
+                    <span class="error-message hidden">* Comment is required</span>
+                    <div class="submit-box">
+                      <div class="submit-button text-center">
+                        <button class="button btn-primary" type="submit" onclick="mySubmit()">Send Message</button>
+                        <div class="text-center text-danger">
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="main-right">
+          <div class="image-right">
+            <img src="./images/contact.jpg" alt="contact">
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-container-inner">
+            <div class="footer-column">
+              <hr class="light">
+              <p>111-222-3333</p>
+              <p>mymail@gmail.com</p>
+              <p>Bach Mai street, Hanoi, Vietnam</p>
+            </div>
+            <div class="footer-column">
+              <hr class="light">
+              <h2>Working hours</h2>
+              <hr class="light">
+              <p>Monday-Friday: 8am - 5pm</p>
+              <p>Weekend: 8am - 12am</p>
+            </div>
+            <div class="footer-column">
+              <hr class="light">
+              <h2>Services</h2>
+              <hr class="light">
+              <p>Outsourcing</p>
+              <p>Website development</p>
+              <p>Mobile applications</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script type="text/javascript" src="./javascript/Form-validation.js"></script>
+
+</body>
+
+</html>
